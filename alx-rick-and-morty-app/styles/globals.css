@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  /* Avoid using @apply with utility classes that may not be available to PostCSS in this setup.
+     Use explicit colors instead (gray-50 and gray-900) to ensure the build succeeds. */
+  background-color: #F9FAFB; /* gray-50 */
+  color: #111827; /* gray-900 */
+}
